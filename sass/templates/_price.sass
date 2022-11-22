@@ -1,0 +1,54 @@
+.price
+    padding-top: 60px
+    padding-bottom: 60px
+    background: url('../img/back.jpg') no-repeat top / cover
+    position: relative
+    &::after
+        content: ''
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        position: absolute
+        background: rgba(0, 0, 0, 0.2)
+    &-title
+        text-align: center
+        font-size: 40px
+        color: $blues
+        z-index: 1
+    &-content
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+        &-card
+            display: flex
+            flex-direction: column
+            align-items: center
+            background: $blues
+            padding: 35px 80px
+            border-radius: 10px
+            margin-right: 20px
+            z-index: 1
+            box-shadow:  6px 4px 2px 1px rgba(0, 0, 0, 0.2)
+            &:last-of-type
+                margin: 0
+            &__title
+                margin-top: 15px
+                margin-bottom: 10px
+                color: $blue
+            &__text
+                color: $blue
+                font-weight: bold
+            &__img
+                width: 300px
+                height: 350px
+                border-radius: 8px
+            &__button
+                margin-top: 25px
+                padding: 8px 35px
+                border-radius: 12px
+                border: none
+                cursor: pointer
+                background: $blue
+                color: $dark
+                box-shadow:  3px 2px 2px 1px rgba(0, 0, 0, 0.2)
